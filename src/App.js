@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import About from './components/About';
+import BackgroundCarousel from './components/BackgroundCarousel';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -24,7 +25,9 @@ function App() {
 
   return (
     <div className="parallax">
-      <div className="parallax__layer parallax__layer--back" />
+      <div className="parallax__layer parallax__layer--back">
+        <BackgroundCarousel />
+      </div>
       <div className="parallax__layer parallax__layer--base">
         <Header />
         <main>

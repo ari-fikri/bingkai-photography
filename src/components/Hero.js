@@ -33,7 +33,7 @@ const Hero = () => {
       <div className="hero-right">
         <div className="hero-photo">
           {/* Use /public/images/hero.png or replace with your image import */}
-          <img src="/images/hero.png" alt="hero photo" />
+          <img src="https://plus.unsplash.com/premium_photo-1663076211121-36754a46de8d" alt="hero photo" />
         </div>
       </div>
     </section>

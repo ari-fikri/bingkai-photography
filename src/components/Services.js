@@ -7,9 +7,9 @@ const Services = () => {
       <p style={{ color: 'var(--muted)', marginTop: 6 }}>Tailored packages for couples who want timeless, natural photos.</p>
 
       <div className="portfolio-grid" style={{ marginTop: 20 }}>
-        <div className="port-item"><img src="/images/hero.png" alt="service"/></div>
-        <div className="port-item"><img src="/images/hero.png" alt="service"/></div>
-        <div className="port-item"><img src="/images/hero.png" alt="service"/></div>
+        <div className="port-item"><img src="https://plus.unsplash.com/premium_photo-1663076211121-36754a46de8d" alt="service"/></div>
+        <div className="port-item"><img src="https://plus.unsplash.com/premium_photo-1681841695231-d674aa32f65b" alt="service"/></div>
+        <div className="port-item"><img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff" alt="service"/></div>
       </div>
 
       <div style={{ display: 'flex', gap: 14, marginTop: 18 }}>

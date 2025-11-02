@@ -16,7 +16,7 @@ const About = () => {
         </div>
 
         <div className="profile">
-          <img src="/images/hero.png" alt="owner" style={{ width: '100%', borderRadius: 14, boxShadow: '0 12px 30px rgba(0,0,0,0.06)' }} />
+          <img src="https://plus.unsplash.com/premium_photo-1663076211121-36754a46de8d" alt="owner" style={{ width: '100%', borderRadius: 14, boxShadow: '0 12px 30px rgba(0,0,0,0.06)' }} />
         </div>
       </div>
     </section>
