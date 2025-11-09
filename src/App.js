@@ -36,7 +36,7 @@ function App() {
             <Hero />
             <Services />
             <Portfolio />
-            <div style={{ height: '100vh' }}></div>
+            <div style={{ height: '70vh' }}></div>
             <About />
             <Contact />
           </main>
