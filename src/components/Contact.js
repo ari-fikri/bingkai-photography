@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
 
   function handleSubmit(e) {
@@ -10,6 +11,7 @@ const Contact = () => {
     alert('Terima kasih — pesan Anda telah kami terima (demo).');
     setName('');
     setEmail('');
+    setPhone('');
     setMessage('');
   }
 
@@ -74,6 +76,14 @@ const Contact = () => {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+          />
+          <label htmlFor="phone">No. HP</label>
+          <input
+            required
+            placeholder="08123456789"
+            id="phone"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
           />
           <label htmlFor="message">Pesan</label>
           <textarea

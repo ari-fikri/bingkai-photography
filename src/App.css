@@ -161,8 +161,13 @@ p.lead{color:var(--muted); font-size:18px; line-height:1.6}
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
-.contact-grid{display:grid; grid-template-columns:1fr 420px; gap:36px}
+.contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:36px}
 form{background:transparent; padding:0; border-radius:0; box-shadow:none}
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+}
 input, textarea{width:100%; padding:12px; border-radius:8px; border:1px solid #ececec; margin-top:10px; font-size:15px}
 textarea{min-height:140px}
 .footer{padding:28px 60px; text-align:center; color:var(--muted); font-size:14px}
