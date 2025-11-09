@@ -89,82 +89,52 @@ p.lead{color:var(--muted); font-size:18px; line-height:1.6}
 .svc p{color:var(--muted); font-size:14px}
 
 /* Portfolio */
-.portfolio-grid{display:grid; grid-template-columns:repeat(4, 1fr); gap:18px; margin-top:30px;}
+.portfolio-grid{display:grid; grid-template-columns:repeat(5, 1fr); gap:18px; margin-top:30px;}
 .port-item{
   border-radius:14px;
   overflow:hidden;
   box-shadow:0 10px 30px rgba(0,0,0,0.06);
   background: #fff;
+  padding: 15px 15px 30px;
   position: relative;
-  height: 350px; /* Fixed height for uniform items */
-}
-.port-item img{
-  width:100%;
-  height:100%; /* Make image fill the item */
-  object-fit:cover;
-  display:block;
-  /* The transition will be longer to create a slow scroll effect */
-  transition: transform 8s linear;
-  transition-delay: 0s; /* No delay when hover ends */
-}
-.port-item:hover img {
-  /* Instead of scaling, we'll scroll the image up.
-     object-fit:cover ensures there's image content outside the view to scroll into. */
-  transform: translateY(-60px);
-  transition-delay: 3s; /* 3-second delay on hover */
+  overflow: hidden;
+  border-radius: 8px;
+  border-bottom: 15px solid #fff;
+  height: 500px;
+  background: #fff;
 }
 
-.port-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
-  color: white;
-  padding: 20px;
-  transform: translateY(70%); /* Initially hide most of the content */
-  transition: transform 0.5s ease-in-out;
+.scroll-content {
+  transition: transform 0s;
 }
 
-.port-item:hover .port-content {
-  transform: translateY(0); /* Reveal content on hover */
+.port-item:hover .scroll-content {
+  transform: translateY(-380px);
+  transition: transform 8s linear 1.5s;
 }
 
 .port-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  margin: 0 0 10px 0;
-  color: #fff;
+  padding: 15px 15px 0;
+  font-size: 18px;
+  font-family: 'Playfair Display';
 }
+
+.port-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
 .port-description {
-  color: #eee;
-  font-size: 14px;
-  line-height: 1.5;
-  height: 120px; /* Adjust height to show a few lines */
-  overflow: hidden; /* Hide overflowing text */
-}
-
-.port-description > div {
-  /* This is the wrapper for the paragraphs that will scroll */
-  transition: transform 8s linear;
-  transform: translateY(0);
-  transition-delay: 0s; /* No delay when hover ends */
-}
-
-.port-item:hover .port-description > div {
-  /* This value might need tweaking depending on the exact content height.
-     It should be -(total_content_height - container_height) */
-  transform: translateY(-130px);
-  transition-delay: 3s; /* 3-second delay on hover */
+  padding: 15px 0;
+  background: #fff;
+  text-align: justify;
 }
 
 .port-link {
-  font-size: 12px;
   color: var(--blush);
-  text-decoration: none;
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* Testimonials */
@@ -209,4 +179,24 @@ textarea{min-height:140px}
   .navlinks{display:none}
   .hero{padding:90px 18px 40px}
   .section{padding:36px 18px}
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.service-item {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  background: #fff;
+}
+
+.service-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
 }
