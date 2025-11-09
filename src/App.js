@@ -24,21 +24,24 @@ function App() {
   }, []);
 
   return (
-    <div className="parallax">
-      <div className="parallax__layer parallax__layer--back">
-        <BackgroundCarousel />
-      </div>
-      <div className="parallax__layer parallax__layer--base">
-        <Header />
-        <main>
-          <Hero />
-          <Services />
-          <Portfolio />
+    <div className="reference-root">
+      <div className="parallax">
+        <div className="parallax__layer parallax__layer--back">
+          <BackgroundCarousel />
           <Testimonials />
-          <About />
-          <Contact />
-        </main>
-        <Footer />
+        </div>
+        <div className="parallax__layer parallax__layer--base">
+          <Header />
+          <main>
+            <Hero />
+            <Services />
+            <Portfolio />
+            <div style={{ height: '100vh' }}></div>
+            <About />
+            <Contact />
+          </main>
+          <Footer />
+        </div>
       </div>
     </div>
   );
